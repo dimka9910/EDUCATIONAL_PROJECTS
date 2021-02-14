@@ -1,0 +1,2 @@
+# EncDecJetBrainsAcademy
+EXAMPLE OF STRATEGY PATTERN
