@@ -1,0 +1,16 @@
+package task1;
+
+import java.util.ArrayList;
+
+public class TaskLab1 {
+    public static void task1(){
+        int n = 10000;
+        final ArrayList<Double> list = ToolsLab1.randomList(n);
+        System.out.println(ToolsLab1.matOz(list));
+        System.out.println(ToolsLab1.dispersion(list));
+
+        ToolsLab1.listToFile(ToolsLab1.autocorrelation(list));
+        ToolsLab1.listToFile(ToolsLab1.plotnRaspr(list, 12));
+        ToolsLab1.listToFile(ToolsLab1.fRaspr(list, 12));
+    }
+}
