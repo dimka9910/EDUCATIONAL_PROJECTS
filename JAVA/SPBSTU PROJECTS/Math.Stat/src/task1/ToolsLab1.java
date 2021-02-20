@@ -88,8 +88,8 @@ public class ToolsLab1 {
      return listAutocor;
     }
 
-    public static void listToFile(ArrayList<Double> list){
-        File file = new File("file.txt");
+    public static void listToFile(ArrayList<Double> list, String str){
+        File file = new File(str);
         try {
             FileWriter writer = new FileWriter(file, false); // overwrites the file
             for (double d : list){

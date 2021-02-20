@@ -9,8 +9,8 @@ public class TaskLab1 {
         System.out.println(ToolsLab1.matOz(list));
         System.out.println(ToolsLab1.dispersion(list));
 
-        ToolsLab1.listToFile(ToolsLab1.autocorrelation(list));
-        ToolsLab1.listToFile(ToolsLab1.plotnRaspr(list, 12));
-        ToolsLab1.listToFile(ToolsLab1.fRaspr(list, 12));
+        ToolsLab1.listToFile(ToolsLab1.autocorrelation(list), "file.txt");
+        ToolsLab1.listToFile(ToolsLab1.plotnRaspr(list, 12), "file.txt");
+        ToolsLab1.listToFile(ToolsLab1.fRaspr(list, 12), "file.txt");
     }
 }
