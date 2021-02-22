@@ -30,7 +30,7 @@ public class CodeDataHtmlController {
 
     @GetMapping(path = "/code/{id}")
     public String getTask(@PathVariable int id, Model model){
-        List<CodeData> list = new ArrayList<CodeData>();
+        List<CodeData> list = new ArrayList<>();
         list.add(codeDataService.getNth(id));
         model.addAttribute("codeDatas", list);
         return "index";

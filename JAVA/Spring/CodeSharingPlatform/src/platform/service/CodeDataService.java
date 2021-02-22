@@ -13,9 +13,6 @@ public class CodeDataService {
     @Autowired
     CodeDataRepo codeDataRepo;
 
-
-    private final List<CodeData> codeDataList = new ArrayList<>();
-
     public List<CodeData> getLastN(int n){
         return codeDataRepo.findFirst10ByOrderByDateDesc();
     }
@@ -28,8 +25,4 @@ public class CodeDataService {
         return codeDataRepo.save(codeData).getId();  //МЕТОД SAVE ВОЗВРАЩАЕТ СОХРАНЁННУЮ СУЩНОСТЬ
     }
 
-
-    //public List<CodeData> all() {
-    //    return codeDataList;
-//    }
 }
