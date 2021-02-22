@@ -9,6 +9,7 @@ import platform.service.CodeDataService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Controller
 public class CodeDataHtmlController {
@@ -29,9 +30,9 @@ public class CodeDataHtmlController {
     }
 
     @GetMapping(path = "/code/{id}")
-    public String getTask(@PathVariable int id, Model model){
+    public String getTask(@PathVariable UUID id, Model model){
         List<CodeData> list = new ArrayList<>();
-        list.add(codeDataService.getNth(id));
+        list.add(codeDataService.getById(id));
         model.addAttribute("codeDatas", list);
         return "index";
     }

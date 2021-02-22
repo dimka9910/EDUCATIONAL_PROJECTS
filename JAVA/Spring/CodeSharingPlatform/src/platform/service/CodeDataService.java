@@ -17,12 +17,28 @@ public class CodeDataService {
         return codeDataRepo.findFirst10ByOrderByDateDesc();
     }
 
-    public CodeData getNth(int n){
+    public CodeData getById(UUID n){
+        var v = codeDataRepo.getById(n);
+        if (v == null)
+            return null;
+        if (v.isViewsRestriction()) {
+            v.setViews(v.getViews() - 1);
+            if (v.getViews() < 0) {
+                //if (v.isTimeRestriction())
+                    codeDataRepo.deleteById(v.getId());
+            }
+            else
+                codeDataRepo.save(v);
+        }
+        if (v.isTimeRestriction()){
+            if (v.getTime() <= 0)
+                codeDataRepo.deleteById(v.getId());
+        }
         return codeDataRepo.getById(n);
     }
 
-    public int add(CodeData codeData){
-        return codeDataRepo.save(codeData).getId();  //МЕТОД SAVE ВОЗВРАЩАЕТ СОХРАНЁННУЮ СУЩНОСТЬ
+    public String add(CodeData codeData){
+        return codeDataRepo.save(codeData).getId().toString();  //МЕТОД SAVE ВОЗВРАЩАЕТ СОХРАНЁННУЮ СУЩНОСТЬ
     }
 
 }

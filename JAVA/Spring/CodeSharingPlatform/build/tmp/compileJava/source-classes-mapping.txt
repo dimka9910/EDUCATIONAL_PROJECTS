@@ -4,6 +4,8 @@ platform/service/CodeDataService.java
  platform.service.CodeDataService
 platform/entity/CodeData.java
  platform.entity.CodeData
+platform/exceptions/IdNotFoundException.java
+ platform.exceptions.IdNotFoundException
 platform/controller/CodeDataHtmlController.java
  platform.controller.CodeDataHtmlController
 platform/config/WebConfig.java
