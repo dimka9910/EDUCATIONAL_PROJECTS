@@ -18,6 +18,13 @@
                     ${codeData.code}
                 </code>
             </pre>
+    <#if codeData.isTimeRestriction()>
+        <span id="time_restriction"> ${codeData.time} </span>
+    </#if>
+    <#if codeData.isViewsRestriction()>
+        <span id="views_restriction"> ${codeData.views} </span>
+    </#if>
+        <script></script>
     </#list>
 </ul>
 </body>

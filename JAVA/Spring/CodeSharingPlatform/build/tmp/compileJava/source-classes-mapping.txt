@@ -8,10 +8,10 @@ platform/exceptions/IdNotFoundException.java
  platform.exceptions.IdNotFoundException
 platform/controller/CodeDataHtmlController.java
  platform.controller.CodeDataHtmlController
-platform/config/WebConfig.java
- platform.config.WebConfig
 platform/CodeSharingPlatform.java
  platform.CodeSharingPlatform
+platform/config/WebConfig.java
+ platform.config.WebConfig
 platform/Answer.java
  platform.Answer
 platform/repository/CodeDataRepo.java

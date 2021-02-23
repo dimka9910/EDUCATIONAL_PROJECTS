@@ -11,11 +11,13 @@ public class CodeSharingPlatform {
 
     public static void main(String[] args) {
 
-        //SpringApplication.run(CodeSharingPlatform.class, args);
-        SpringApplication app = new SpringApplication(CodeSharingPlatform.class);
-        app.setDefaultProperties(Collections
-                .singletonMap("server.port", "8080"));
-        app.run(args);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+
+        SpringApplication.run(CodeSharingPlatform.class, args);
     }
 
 }
