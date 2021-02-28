@@ -44,7 +44,7 @@ class irngeo1 implements GeneratingMethod {
             temp *= (1 - p);
             m++;
         }
-        return m;
+        return m + 1;
     }
 }
 
@@ -57,7 +57,7 @@ class irngeo2 implements GeneratingMethod {
             a = Math.random();;
             m++;
         }
-        return m;
+        return m + 1;
     }
 }
 
@@ -65,7 +65,7 @@ class irngeo3 implements GeneratingMethod {
     @Override
     public int generate(double p, double b_) {
         double a = Math.random();
-        return (int)Math.round(Math.log(a) / Math.log(1 - p)) + 1;
+        return (int)(Math.log(a) / Math.log(1 - p)) + 1;
     }
 }
 
