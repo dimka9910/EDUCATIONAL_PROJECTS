@@ -26,7 +26,8 @@ public class SearchingMethod {
                 }
             }
             time = System.currentTimeMillis() - time;
-            String timeout = time / 60000 + " min. " + (time % 60000) / 1000 + " sec. " + (time % 60000) % 1000 + " ms.";
+            String timeout = time / 60000 + " min. " + (time % 60000) / 1000
+                    + " sec. " + (time % 60000) % 1000 + " ms.";
             System.out.println("Found " + i + " / " + j + " entries. Time taken: " + timeout);
         } catch (Exception e){
             return;
