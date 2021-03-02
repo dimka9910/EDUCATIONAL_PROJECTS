@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Blockchain.iml" filepath="$PROJECT_DIR$/.idea/modules/Blockchain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Burgers/Blockchain.Problems-Burgers.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Burgers/Blockchain.Problems-Burgers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Burgers/Blockchain.Problems-Burgers.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Burgers/Blockchain.Problems-Burgers.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Burgers/Blockchain.Problems-Burgers.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Burgers/Blockchain.Problems-Burgers.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Forex Broker/Blockchain.Problems-Forex_Broker.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Forex Broker/Blockchain.Problems-Forex_Broker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Forex Broker/Blockchain.Problems-Forex_Broker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Forex Broker/Blockchain.Problems-Forex_Broker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Forex Broker/Blockchain.Problems-Forex_Broker.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Forex Broker/Blockchain.Problems-Forex_Broker.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Blockchain.Problems-Laptop_factory.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Blockchain.Problems-Laptop_factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Blockchain.Problems-Laptop_factory.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Blockchain.Problems-Laptop_factory.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Blockchain.Problems-Laptop_factory.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Blockchain.Problems-Laptop_factory.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Number holder/Blockchain.Problems-Number_holder.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Number holder/Blockchain.Problems-Number_holder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Number holder/Blockchain.Problems-Number_holder.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Number holder/Blockchain.Problems-Number_holder.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Number holder/Blockchain.Problems-Number_holder.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Number holder/Blockchain.Problems-Number_holder.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Blockchain.Problems-Phone_factory.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Blockchain.Problems-Phone_factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Blockchain.Problems-Phone_factory.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Blockchain.Problems-Phone_factory.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Blockchain.Problems-Phone_factory.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Blockchain.Problems-Phone_factory.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Blockchain.Problems-Serializable_user.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Blockchain.Problems-Serializable_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Blockchain.Problems-Serializable_user.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Blockchain.Problems-Serializable_user.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Blockchain.Problems-Serializable_user.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Blockchain.Problems-Serializable_user.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Stock Broker/Blockchain.Problems-Stock_Broker.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Stock Broker/Blockchain.Problems-Stock_Broker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Stock Broker/Blockchain.Problems-Stock_Broker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Stock Broker/Blockchain.Problems-Stock_Broker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Stock Broker/Blockchain.Problems-Stock_Broker.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Stock Broker/Blockchain.Problems-Stock_Broker.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Undo command/Blockchain.Problems-Undo_command.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Undo command/Blockchain.Problems-Undo_command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Undo command/Blockchain.Problems-Undo_command.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Undo command/Blockchain.Problems-Undo_command.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Undo command/Blockchain.Problems-Undo_command.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Undo command/Blockchain.Problems-Undo_command.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Writing a class/Blockchain.Problems-Writing_a_class.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Writing a class/Blockchain.Problems-Writing_a_class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Writing a class/Blockchain.Problems-Writing_a_class.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Writing a class/Blockchain.Problems-Writing_a_class.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Writing a class/Blockchain.Problems-Writing_a_class.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Writing a class/Blockchain.Problems-Writing_a_class.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Blockchain.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Blockchain.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Blockchain.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Blockchain.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Blockchain.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Blockchain.util.test.iml" />
+    </modules>
+  </component>
+</project>

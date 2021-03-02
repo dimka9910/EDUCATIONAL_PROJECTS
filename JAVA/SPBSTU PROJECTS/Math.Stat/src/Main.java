@@ -1,8 +1,10 @@
-import task2.TaskLab2;
-import task2.ToolsLab2;
+import tasks.Tasks;
+import tasks.task1.TaskLab1;
+import tasks.task1.TaskLab1_dop;
 
 class Main {
     public static void main(String[] args) {
-        TaskLab2.task2();
+        Tasks task = new TaskLab1_dop();
+        task.run();
     }
 }
