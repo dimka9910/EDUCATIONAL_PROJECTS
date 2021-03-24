@@ -1,5 +1,3 @@
-blockchain/Blockchain.java
- blockchain.Blockchain
 blockchain/Block.java
  blockchain.Block
 blockchain/StringUtil.java

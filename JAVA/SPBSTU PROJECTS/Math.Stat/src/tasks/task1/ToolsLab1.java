@@ -17,8 +17,8 @@ public class ToolsLab1 {
         double step = (list.get(list.size() - 1) - list.get(0))/ n;
         for (int i = 0; i < n; i++){
             for (double d: list){
-                if (d >= step * i){
-                    if (d >= step * (i + 1)){
+                if (d >= list.get(0) + step * i){
+                    if (d >= list.get(0) + step * (i + 1)){
                         break;
                     }
                     result.set(i, result.get(i) + 1);

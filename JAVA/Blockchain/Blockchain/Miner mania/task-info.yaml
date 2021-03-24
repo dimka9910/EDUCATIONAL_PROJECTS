@@ -365,6 +365,24 @@ files:
         }
     }
   learner_created: true
+- name: src/blockchain/testing/SomeRunnable.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/testing/SomeThread.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/Miners.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/testing/Main2.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/testing2/Main3.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/50/stages/273/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 04 Mar 2021 20:14:10 UTC
+record: 3

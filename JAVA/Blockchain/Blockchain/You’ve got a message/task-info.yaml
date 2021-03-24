@@ -240,6 +240,272 @@ files:
         }
     }
   learner_created: false
+- name: src/blockchain/StringUtil.java
+  visible: true
+  text: |-
+    package blockchain;
+
+    import java.security.MessageDigest;
+
+    class StringUtil {
+        /* Applies Sha256 to a string and returns a hash. */
+        public static String applySha256(String input){
+            try {
+                MessageDigest digest = MessageDigest.getInstance("SHA-256");
+                /* Applies sha256 to our input */
+                byte[] hash = digest.digest(input.getBytes("UTF-8"));
+                StringBuilder hexString = new StringBuilder();
+                for (byte elem: hash) {
+                    String hex = Integer.toHexString(0xff & elem);
+                    if(hex.length() == 1) hexString.append('0');
+                    hexString.append(hex);
+                }
+                return hexString.toString();
+            }
+            catch(Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+  learner_created: true
+- name: src/blockchain/testing/Main2.java
+  visible: true
+  text: |
+    package blockchain.testing;
+
+
+    import java.util.concurrent.ExecutorService;
+    import java.util.concurrent.Executors;
+
+    public class Main2 {
+
+        private static final int POOL_SIZE = Runtime.getRuntime().availableProcessors();
+
+        public static void main(String[] args) {
+            Thread thread = new Thread(new SomeRunnable(1));// passing runnable
+            Thread thread1 = new SomeThread(3); // a subclass of Thread
+
+            //thread.start();
+            //thread1.start();
+
+            ExecutorService executor = Executors.newFixedThreadPool(POOL_SIZE);
+
+            /** All of That is
+             * possible */
+            //executor.submit(new SomeRunnable(1));
+            //executor.submit(new Thread(new SomeRunnable(1)));
+            //executor.submit(thread);
+            //executor.submit(thread1);
+
+
+
+            executor.shutdown();
+
+        }
+    }
+  learner_created: true
+- name: src/blockchain/Blockchain.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.util.ArrayList;
+    import java.util.LinkedList;
+    import java.util.List;
+
+    public class Blockchain {
+        LinkedList<Block> list;
+
+        public Blockchain(int n) {
+            list = new LinkedList<>();
+            list.add(new Block(1, "0"));
+        }
+
+        public void generate(){
+            Block block = new Block(list.getLast());
+            double magicNumber = Math.random();
+
+            list.add(new Block(list.getLast()));
+        }
+
+        private void generateHash(){
+    //        do {
+    //            magicNumber = Math.random();
+    //            currentHash = StringUtil.applySha256(getAllFields());
+    //        } while (!currentHash.substring(0, zerosAmount).equals(createZerosString()));
+        }
+
+
+        public LinkedList<Block> getList() {
+            return list;
+        }
+    }
+  learner_created: true
+- name: src/blockchain/testing/SomeThread.java
+  visible: true
+  text: |
+    package blockchain.testing;
+
+    public class SomeThread extends Thread {
+        private int j = 0;
+
+        public SomeThread(int j) {
+            this.j = j;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10; i++){
+                j++;
+                System.out.println("Thread " + Thread.currentThread().getId() + " " + i + " " + j);
+            }
+        }
+    }
+  learner_created: true
+- name: src/blockchain/testing2/Main3.java
+  visible: true
+  text: |
+    package blockchain.testing2;
+
+    import java.util.ArrayList;
+    import java.util.List;
+
+
+    class Team {
+    }
+
+    class Player {
+        public Team team;
+
+        public Player(Team team) {
+            this.team = team;
+        }
+    }
+
+
+    abstract class Engine {
+    }
+
+    class Car {
+        Engine engine;
+
+        public Car(Engine eng) {
+            engine = eng;
+        }
+    }
+
+    class User {
+        public int Id;
+        public String name;
+    }
+
+    class Manager extends User {
+        public String company;
+    }
+
+
+    public class Main3 {
+        public static void main(String[] args) {
+
+
+        }
+    }
+  learner_created: true
+- name: src/blockchain/Miners.java
+  visible: true
+  text: |
+    package blockchain;
+
+    public class Miners implements Runnable{
+
+        @Override
+        public void run() {
+            System.out.println();
+
+        }
+    }
+  learner_created: true
+- name: src/blockchain/testing/SomeRunnable.java
+  visible: true
+  text: |
+    package blockchain.testing;
+
+    public class SomeRunnable implements Runnable{
+
+        private int j = 0;
+
+        public SomeRunnable(int j) {
+            this.j = j;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10; i++){
+                System.out.println("Runnable " + Thread.currentThread().getId() + " " + i + " " + j);
+                j++;
+            }
+        }
+    }
+  learner_created: true
+- name: src/blockchain/Block.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.util.Date;
+    import java.util.stream.IntStream;
+
+    public class Block {
+        private int id;
+        private long timeStamp;
+        private double magicNumber;
+        private String previousHash;
+        private String currentHash;
+
+        public Block(Block previousBlock) {
+            timeStamp = new Date().getTime();
+            this.id = previousBlock.getId() + 1;
+            this.previousHash = previousBlock.getCurrentHash();
+        }
+
+        public Block(int id, String previousHash) {
+            timeStamp = new Date().getTime();
+            this.id = id;
+            this.previousHash = previousHash;
+        }
+
+
+        private String getAllFields(double magicN){
+            return id + previousHash + timeStamp + magicN;
+        }
+        private String getAllFields(){
+            return id + previousHash + timeStamp + magicNumber;
+        }
+
+        @Override
+        public String toString() {
+            return "Block:\n" +
+                    "Id: " + id + "\n" +
+                    "Timestamp: " + timeStamp + "\n" +
+                    "Magic number: " + (int)(magicNumber * 1000000) + "\n" +
+                    "Hash of the previous block: \n" +
+                    previousHash + "\n" +
+                    "Hash of the block: \n" +
+                    currentHash + "\n" +
+                    "Block was generating for " +
+                    (int)((new Date().getTime() - timeStamp)/1000) + " seconds\n";
+        }
+
+
+        public String getCurrentHash() {
+            return currentHash;
+        }
+
+        public int getId() {
+            return id;
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/50/stages/274/implement#comment
 status: Unchecked
 record: -1

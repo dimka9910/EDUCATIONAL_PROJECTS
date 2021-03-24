@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/209941/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Tue, 02 Mar 2021 18:24:24 UTC
+update_date: Mon, 15 Mar 2021 17:55:46 UTC
 stages:
 - id: 271
   step: 5413
@@ -13,7 +13,7 @@ stages:
   is_completed: true
 - id: 273
   step: 5415
-  is_completed: false
+  is_completed: true
 - id: 274
   step: 5416
   is_completed: false
@@ -25,8 +25,6 @@ stages:
   is_completed: false
 topics:
   0:
-  - title: Introduction to Scala
-    theory_id: 8945
   - title: Immutability
     theory_id: 7929
   - title: Units of information
@@ -55,12 +53,6 @@ topics:
     theory_id: 9831
   - title: Hash table
     theory_id: 5364
-  - title: Write, compile, and run
-    theory_id: 3739
-  - title: JVM, JRE, and JDK
-    theory_id: 3499
-  - title: Running programs on your computer
-    theory_id: 3746
   - title: Introduction to OOP
     theory_id: 3614
   - title: Introduction to Java
@@ -105,8 +97,16 @@ topics:
     theory_id: 3507
   - title: Switch statement
     theory_id: 3504
-  - title: Introduction to Kotlin
-    theory_id: 4350
+  - title: Write, compile, and run
+    theory_id: 3739
+  - title: JVM, JRE, and JDK
+    theory_id: 3499
+  - title: Errors in programs
+    theory_id: 3536
+  - title: What is an exception
+    theory_id: 3497
+  - title: NPE
+    theory_id: 1945
   - title: Sizes and ranges
     theory_id: 3532
   - title: Type casting
@@ -133,72 +133,68 @@ topics:
     theory_id: 3523
   - title: Final variables
     theory_id: 7427
-  - title: IntelliJ IDEA
-    theory_id: 3801
-  - title: Algorithms in Java
-    theory_id: 3540
-  - title: Errors in programs
-    theory_id: 3536
-  - title: What is an exception
-    theory_id: 3497
   - title: Hierarchy of exceptions
     theory_id: 3570
   - title: Exception handling
     theory_id: 3552
-  - title: NPE
-    theory_id: 1945
-  - title: Generic programming
-    theory_id: 3492
-  - title: Generics and Object
-    theory_id: 3493
-  - title: Generic methods
-    theory_id: 3606
+  - title: IntelliJ IDEA
+    theory_id: 3801
+  - title: Algorithms in Java
+    theory_id: 3540
+  - title: Running programs on your computer
+    theory_id: 3746
   - title: Hash table in Java
     theory_id: 6945
-  - title: Defining classes
-    theory_id: 3618
-  - title: Package
-    theory_id: 3621
-  - title: Constructor
-    theory_id: 3535
-  - title: Objects
-    theory_id: 4727
-  - title: Instance methods
-    theory_id: 3495
-  - title: Access modifiers
-    theory_id: 3589
-  - title: Getters and setters
-    theory_id: 3599
-  - title: Static members
-    theory_id: 3534
-  - title: Annotations basics
-    theory_id: 3622
-  - title: Multiple constructors
-    theory_id: 3538
-  - title: Inheritance
-    theory_id: 3583
-  - title: The keyword super
-    theory_id: 3588
-  - title: Hiding and overriding
-    theory_id: 3572
-  - title: Protected modifier
-    theory_id: 6692
-  - title: Referencing subclass objects
-    theory_id: 3585
-  - title: The Object class
-    theory_id: 3596
   - title: LocalDate
     theory_id: 3592
   - title: LocalTime
     theory_id: 3593
   - title: LocalDateTime
     theory_id: 3617
-  - title: Boxing and unboxing
-    theory_id: 3595
+  - title: Introduction to generic programming
+    theory_id: 3492
+  - title: Generics and Object
+    theory_id: 3493
+  - title: Generic methods
+    theory_id: 3606
   - title: What are collections
     theory_id: 3770
   - title: ArrayList
     theory_id: 3567
+  - title: Defining classes
+    theory_id: 3618
+  - title: Constructor
+    theory_id: 3535
+  - title: Instance methods
+    theory_id: 3495
+  - title: Multiple constructors
+    theory_id: 3538
+  - title: Package
+    theory_id: 3621
+  - title: Access modifiers
+    theory_id: 3589
+  - title: Getters and setters
+    theory_id: 3599
+  - title: Inheritance
+    theory_id: 3583
+  - title: The keyword super
+    theory_id: 3588
+  - title: Protected modifier
+    theory_id: 6692
+  - title: Referencing subclass objects
+    theory_id: 3585
+  - title: The Object class
+    theory_id: 3596
+  - title: Annotations basics
+    theory_id: 3622
+  - title: Objects
+    theory_id: 4727
+  - title: Boxing and unboxing
+    theory_id: 3595
+  - title: Static members
+    theory_id: 3534
+  - title: Hiding and overriding
+    theory_id: 3572
   1:
   - title: The concept of patterns
     theory_id: 3611
@@ -263,16 +259,16 @@ topics:
     theory_id: 3610
   - title: Thread synchronization
     theory_id: 3557
-  - title: Executors
-    theory_id: 4895
-  - title: Default methods
-    theory_id: 11354
   - title: Lambda expressions
     theory_id: 11635
   - title: Method references
     theory_id: 3620
   - title: Functional interfaces
     theory_id: 11636
+  - title: Executors
+    theory_id: 4895
+  - title: Default methods
+    theory_id: 11354
   - title: Anonymous classes
     theory_id: 11896
   3:
@@ -286,8 +282,6 @@ topics:
     theory_id: 3581
   - title: The Set interface
     theory_id: 3575
-  - title: The Map interface
-    theory_id: 3558
   - title: Standard functional interfaces
     theory_id: 3623
   - title: Function composition
@@ -314,6 +308,8 @@ topics:
     theory_id: 3612
   - title: Parallel streams
     theory_id: 8419
+  - title: The Map interface
+    theory_id: 3558
   - title: Grouping collectors
     theory_id: 10512
   4:

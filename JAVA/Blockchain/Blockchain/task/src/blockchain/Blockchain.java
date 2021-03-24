@@ -9,11 +9,21 @@ public class Blockchain {
 
     public Blockchain(int n) {
         list = new LinkedList<>();
-        list.add(new Block(1, "0", n));
+        list.add(new Block(1, "0"));
     }
 
     public void generate(){
+        Block block = new Block(list.getLast());
+        double magicNumber = Math.random();
+
         list.add(new Block(list.getLast()));
+    }
+
+    private void generateHash(){
+//        do {
+//            magicNumber = Math.random();
+//            currentHash = StringUtil.applySha256(getAllFields());
+//        } while (!currentHash.substring(0, zerosAmount).equals(createZerosString()));
     }
 
 

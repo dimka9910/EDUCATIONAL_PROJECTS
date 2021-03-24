@@ -8,3 +8,35 @@ content:
 - Stock Broker
 - Forex Broker
 - Undo command
+- Getting current thread info
+- Writing a thread for printing numbers
+- Multiple threads
+- Starting runnables
+- Ordering the execution of threads
+- Calculate the number of distinct characters
+- Summing with threads
+- Multithreaded counter
+- Countdown counter
+- Thread-safe account
+- Messaging
+- Check whether a number is prime
+- Output elements
+- Count passwords
+- Finding max and min elements
+- Omitting long strings
+- Sorting the absolute values
+- Count words without repetitions
+- Pizza Decorator
+- Coffee Decorator
+- Breakfast Decorator
+- Cinema Facade
+- ASCII Art
+- The product of squares
+- Generating cats
+- Powers of two
+- The total number of employees
+- The ten most frequent words
+- Fix the sorting order
+- Prime numbers
+- Counting clicks
+- The total sum of transaction by each account

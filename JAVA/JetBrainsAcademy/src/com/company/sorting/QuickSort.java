@@ -29,12 +29,6 @@ public class QuickSort<T extends Comparable<T>> implements SortMethod<T>{
         return partitionIndex - 1;
     }
 
-    private void swap(List<T> list, int a, int b){
-        T tmp = list.get(a);
-        list.set(a, list.get(b));
-        list.set(b, tmp);
-    }
-
     @Override
     public void sort(List<T> list) {
         quickSort(list, 0, list.size() - 1);
