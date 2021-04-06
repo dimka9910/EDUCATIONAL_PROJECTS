@@ -1,4 +1,4 @@
-package com.company.mainFiles;
+package com.company.searching;
 
 public class mainSearch {
 }

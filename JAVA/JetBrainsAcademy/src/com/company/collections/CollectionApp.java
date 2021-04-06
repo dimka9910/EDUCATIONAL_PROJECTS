@@ -1,2 +1,5 @@
-package com.company.collections;public class collectionApp {
+package com.company.collections;
+
+public interface CollectionApp {
+    void run();
 }

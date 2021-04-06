@@ -1,2 +1,10 @@
-package com.company.collections;public class TheUtilityClassCollection {
+package com.company.collections;
+
+public class TheUtilityClassCollection implements CollectionApp{
+
+
+    @Override
+    public void run() {
+
+    }
 }

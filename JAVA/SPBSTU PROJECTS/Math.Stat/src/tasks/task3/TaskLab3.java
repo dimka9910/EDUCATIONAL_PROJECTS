@@ -2,6 +2,7 @@ package tasks.task3;
 
 import tasks.Tasks;
 import tasks.task1.ToolsLab1;
+import tasks.task3dop.ToolsLab3dop;
 
 import java.util.ArrayList;
 
@@ -11,12 +12,12 @@ public class TaskLab3 implements Tasks {
         ArrayList<Double> list = new ArrayList<>();
         for (int i = 0; i < 10000; i++){
             double d;
-//            d = ToolsLab3.rnuni(1,100);
-//            d = ToolsLab3.rnnrm1();
+            d = ToolsLab3.rnuni(1,100);
+//            d = ToolsLab3.rnnrm1(); //нормальное
 //            d = ToolsLab3.rnnrm2();
 //            d = ToolsLab3.rnexp(1);
 //            d = ToolsLab3.rnchis();
-            d = ToolsLab3.rnstud();
+//            d = ToolsLab3.rnstud();
             list.add(d);
         }
 

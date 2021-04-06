@@ -1,4 +1,4 @@
-package com.company.mainFiles;
+package com.company.sorting;
 
 import com.company.sorting.InsertionSort;
 import com.company.sorting.SortMethod;
