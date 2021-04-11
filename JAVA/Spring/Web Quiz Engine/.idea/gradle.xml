@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="java version &quot;11.0.8+10&quot;" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Problems/Calculator" />
+            <option value="$PROJECT_DIR$/Problems/Create class" />
+            <option value="$PROJECT_DIR$/Problems/Create instance" />
+            <option value="$PROJECT_DIR$/Problems/Create prototype" />
+            <option value="$PROJECT_DIR$/Problems/Cycled list" />
+            <option value="$PROJECT_DIR$/Problems/Days of week" />
+            <option value="$PROJECT_DIR$/Problems/Find min and max" />
+            <option value="$PROJECT_DIR$/Problems/Improve your vehicle" />
+            <option value="$PROJECT_DIR$/Problems/New Inner class" />
+            <option value="$PROJECT_DIR$/Problems/Pets in boxes" />
+            <option value="$PROJECT_DIR$/Problems/Reducer operator" />
+            <option value="$PROJECT_DIR$/Problems/Rope" />
+            <option value="$PROJECT_DIR$/Problems/Simple doubly linked list" />
+            <option value="$PROJECT_DIR$/Problems/Slightly mocking" />
+            <option value="$PROJECT_DIR$/Problems/Test driven development" />
+            <option value="$PROJECT_DIR$/Problems/Testing the factorial" />
+            <option value="$PROJECT_DIR$/Problems/The LIFO principle in action" />
+            <option value="$PROJECT_DIR$/Problems/Your vehicle" />
+            <option value="$PROJECT_DIR$/Web Quiz Engine/task" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

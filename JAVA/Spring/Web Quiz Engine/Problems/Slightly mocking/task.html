@@ -1,0 +1,73 @@
+<h2>Slightly mocking</h2>
+<html>
+ <head></head>
+ <body>
+  <p><strong>Test-driven development</strong> is a software development approach that declares writing tests of code <em>before</em> writing the code itself.</p> 
+  <p>Imagine that your team needs to write a divide method of <code class="language-java">Calculator</code> class</p> 
+  <pre><code class="language-java">public class Calculator {
+
+    private final CalculatorEngine engine;
+
+    public Calculator(CalculatorEngine engine) {
+        this.engine = engine;
+    }
+
+    public String divide(int a, int b) {
+        // implement me
+    }
+}</code></pre> 
+  <p><code class="language-java">Calculator</code> class reads two input arguments: <code class="language-java">a</code> and <code class="language-java">b</code>, and delegates them to <code class="language-java">divide</code> method of <code class="language-java">CalculatorEngine</code> class. <code class="language-java">CalculatorEngine</code> does necessary calculation and returns a <code class="language-java">result</code>. Then <code class="language-java">Calculator</code> constructs the output string by the rule:</p> 
+  <ul> 
+   <li><strong>Division of <code class="language-java">a</code> by <code class="language-java">b</code> = <code class="language-java">result</code></strong>, in case of <code class="language-java">b != 0</code></li> 
+   <li><strong>Division by zero is prohibited</strong>, in case of <code class="language-java">b == 0</code></li> 
+  </ul> 
+  <p>Method <code class="language-java">divide</code> of <code class="language-java">CalculatorEngine</code> class accepts 2 arguments and returns a result of integer division. If the second argument is zero, it throws the <code class="language-java">ArithmeticException</code></p> 
+  <pre><code class="language-java">public class CalculatorEngine {
+
+    public int divide(int a, int b) throws ArithmeticException {
+        return a / b;
+    }
+
+}</code></pre> 
+  <p> </p> 
+  <p>Your teammate has already created tests for the method</p> 
+  <pre><code class="language-java">public class CalculatorTest {
+
+    @Mock
+    private CalculatorEngine engine = Mockito.mock(CalculatorEngine.class);
+
+    private Calculator calculator = new Calculator(engine);
+
+    @Test
+    public void testDivideCase01() {
+        Mockito.when(engine.divide(0, 1)).thenReturn(0);
+        Assert.assertEquals("Division of 0 by 1 = 0", calculator.divide(0, 1));
+    }
+
+    @Test
+    public void testDivideCase11() {
+        Mockito.when(engine.divide(1, 1)).thenReturn(1);
+        Assert.assertEquals("Division of 1 by 1 = 1", calculator.divide(1, 1));
+    }
+
+    @Test
+    public void testDivideCase12() {
+        Mockito.when(engine.divide(1, 2)).thenReturn(0);
+        Assert.assertEquals("Division of 1 by 2 = 0", calculator.divide(1, 2));
+    }
+
+    @Test
+    public void testDivideCaseZeroDivider() {
+        Mockito.when(engine.divide(1, 0)).thenThrow(new ArithmeticException());
+        Assert.assertEquals("Division by zero is prohibited", calculator.divide(1, 0));
+    }
+}</code>
+</pre> 
+  <p>Implement the <code class="language-java">divide</code> method of <code class="language-java">Calculator</code> class according to the tests.</p> 
+  <p>Note, that implementation should invoke the <code class="language-java">divide</code> method of <code class="language-java">engine</code> field to be passed . Otherwise you will see the error message: <strong>Please use divide method of engine field</strong></p>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">0<br>1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">Division of 0 by 1 = 0</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>
+<b>Caution</b><br><br>
+You may see errors in your code or execution results due to missing context. Don’t worry about it, just write the solution and press Check.
+<br><br>
+<a href="https://hyperskill.org/learn/step/7591">Show topic summary</a>

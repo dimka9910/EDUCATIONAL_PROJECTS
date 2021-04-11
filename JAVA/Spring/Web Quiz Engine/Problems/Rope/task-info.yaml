@@ -1,0 +1,23 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    class Main {
+        public static void main(String[] args) {
+            // put your code here
+        }
+    }
+  learner_created: false
+- name: src/Node.java
+  visible: true
+  learner_created: true
+- name: src/DoublyLinkedList.java
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/8297#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Mon, 29 Mar 2021 11:51:32 UTC
+record: -1

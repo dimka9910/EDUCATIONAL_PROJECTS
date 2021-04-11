@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Phone Book/task" />
+            <option value="$PROJECT_DIR$/Problems/A fixed point" />
+            <option value="$PROJECT_DIR$/Problems/Correct the usage of non-generic class" />
+            <option value="$PROJECT_DIR$/Problems/Difference between two doubles" />
+            <option value="$PROJECT_DIR$/Problems/Initialize an object of a generic class" />
+            <option value="$PROJECT_DIR$/Problems/K-combination" />
+            <option value="$PROJECT_DIR$/Problems/Move the pivot" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
