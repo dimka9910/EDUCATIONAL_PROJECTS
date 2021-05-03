@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class BoxInside {
 
     // Complete this method
@@ -31,4 +33,25 @@ class Box<T> {
     T getAnimal() {
         return animal;
     }
+}
+
+
+
+class Application<T extends Throwable> {
+
+    public static void main(String[] args) {
+
+        Application<RuntimeException> application = new Application<>();
+        application.secureRun(() -> System.out.println("Hello!"));
+
+    }
+
+    public void secureRun(Runnable runnable) throws T {
+        try {
+            runnable.run();
+        } catch (T e) {
+            System.err.print("Error!");
+        }
+    }
+
 }

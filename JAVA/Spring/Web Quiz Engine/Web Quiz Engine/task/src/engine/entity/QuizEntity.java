@@ -3,6 +3,7 @@ package engine.entity;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -19,6 +20,10 @@ public class QuizEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @ManyToOne
+    private UserEntity user;
+
     @NotBlank
     private String title;
 
@@ -33,5 +38,4 @@ public class QuizEntity {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @ElementCollection
     private List<Integer> answer;
-
 }

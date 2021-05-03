@@ -2,15 +2,35 @@ engine/entity/QuizEntity.java
  engine.entity.QuizEntity
 engine/exceptions/IdNotFoundException.java
  engine.exceptions.IdNotFoundException
-engine/response/Response.java
- engine.response.Response
-engine/service/QuizService.java
- engine.service.QuizService
+engine/repository/UserRepository.java
+ engine.repository.UserRepository
+engine/entity/CompletedEntity.java
+ engine.entity.CompletedEntity
 engine/WebQuizEngine.java
  engine.WebQuizEngine
+engine/controller/UserRestController.java
+ engine.controller.UserRestController
+engine/exceptions/ForbiddenException.java
+ engine.exceptions.ForbiddenException
+engine/service/UserService.java
+ engine.service.UserService
+engine/config/SpringSecurityConfig.java
+ engine.config.SpringSecurityConfig
+engine/entity/JsonAnswer.java
+ engine.entity.JsonAnswer
+engine/response/Response.java
+ engine.response.Response
+engine/components/AuthenticationEntryPoint.java
+ engine.components.AuthenticationEntryPoint
+engine/entity/UserEntity.java
+ engine.entity.UserEntity
+engine/service/QuizService.java
+ engine.service.QuizService
+engine/repository/CompletedRepository.java
+ engine.repository.CompletedRepository
+engine/service/CompletedService.java
+ engine.service.CompletedService
 engine/repository/QuizRepository.java
  engine.repository.QuizRepository
 engine/controller/QuizRestController.java
  engine.controller.QuizRestController
-engine/entity/JsonAnswer.java
- engine.entity.JsonAnswer

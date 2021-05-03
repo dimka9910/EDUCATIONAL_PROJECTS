@@ -8,10 +8,11 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="java version &quot;11.0.8+10&quot;" />
+        <option name="gradleJvm" value="#JAVA_INTERNAL" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Problems/A new rockstar game" />
             <option value="$PROJECT_DIR$/Problems/Calculator" />
             <option value="$PROJECT_DIR$/Problems/Create class" />
             <option value="$PROJECT_DIR$/Problems/Create instance" />
@@ -19,13 +20,19 @@
             <option value="$PROJECT_DIR$/Problems/Cycled list" />
             <option value="$PROJECT_DIR$/Problems/Days of week" />
             <option value="$PROJECT_DIR$/Problems/Find min and max" />
+            <option value="$PROJECT_DIR$/Problems/Fix me" />
+            <option value="$PROJECT_DIR$/Problems/Geek Builder" />
             <option value="$PROJECT_DIR$/Problems/Improve your vehicle" />
             <option value="$PROJECT_DIR$/Problems/New Inner class" />
             <option value="$PROJECT_DIR$/Problems/Pets in boxes" />
+            <option value="$PROJECT_DIR$/Problems/Photocopiers" />
             <option value="$PROJECT_DIR$/Problems/Reducer operator" />
+            <option value="$PROJECT_DIR$/Problems/Robot Builder" />
+            <option value="$PROJECT_DIR$/Problems/Rockstar games" />
             <option value="$PROJECT_DIR$/Problems/Rope" />
             <option value="$PROJECT_DIR$/Problems/Simple doubly linked list" />
             <option value="$PROJECT_DIR$/Problems/Slightly mocking" />
+            <option value="$PROJECT_DIR$/Problems/Subway Sandwich" />
             <option value="$PROJECT_DIR$/Problems/Test driven development" />
             <option value="$PROJECT_DIR$/Problems/Testing the factorial" />
             <option value="$PROJECT_DIR$/Problems/The LIFO principle in action" />

@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/287312/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Sun, 11 Apr 2021 16:30:24 UTC
+update_date: Sat, 17 Apr 2021 22:34:44 UTC
 stages:
 - id: 504
   step: 8252
@@ -19,10 +19,10 @@ stages:
   is_completed: true
 - id: 508
   step: 8256
-  is_completed: false
+  is_completed: true
 - id: 509
   step: 8257
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Immutability
@@ -35,8 +35,6 @@ topics:
     theory_id: 10996
   - title: Computer algorithms
     theory_id: 4953
-  - title: Introducing the first algorithm
-    theory_id: 10336
   - title: The big O notation
     theory_id: 4991
   - title: Data structures
@@ -45,10 +43,6 @@ topics:
     theory_id: 7255
   - title: Dynamic array
     theory_id: 5357
-  - title: Command line overview
-    theory_id: 8977
-  - title: Parameters and options
-    theory_id: 9746
   - title: World Wide Web
     theory_id: 6633
   - title: HyperText Transfer Protocol
@@ -139,6 +133,12 @@ topics:
     theory_id: 8504
   - title: Frameworks
     theory_id: 6701
+  - title: Command line overview
+    theory_id: 8977
+  - title: Parameters and options
+    theory_id: 9746
+  - title: Gradle basics
+    theory_id: 5075
   - title: Calling a method
     theory_id: 10973
   - title: Declaring a method
@@ -161,18 +161,16 @@ topics:
     theory_id: 3523
   - title: Final variables
     theory_id: 7427
-  - title: IntelliJ IDEA
-    theory_id: 3801
   - title: Java Archive
     theory_id: 4311
-  - title: Gradle basics
-    theory_id: 5075
   - title: Basic project with Gradle
     theory_id: 5077
   - title: Building apps using Gradle
     theory_id: 7917
   - title: Dependency management
     theory_id: 5076
+  - title: IntelliJ IDEA
+    theory_id: 3801
   - title: Introduction to generic programming
     theory_id: 3492
   - title: What are collections

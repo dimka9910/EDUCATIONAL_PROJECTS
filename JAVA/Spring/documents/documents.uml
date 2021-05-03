@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.digitaldesign.documents</OriginalElement>
+  <nodes>
+    <node x="196.0" y="386.5">com.digitaldesign.documents.entity.DocumentType</node>
+    <node x="582.0" y="364.5">com.digitaldesign.documents.entity.FileEntity</node>
+    <node x="857.5" y="375.5">com.digitaldesign.documents.service.UserService</node>
+    <node x="429.875" y="705.0">com.digitaldesign.documents.service.documentService</node>
+    <node x="179.91666666666652" y="535.0">com.digitaldesign.documents.entity.DocumentEntity</node>
+    <node x="845.9285714285714" y="182.5">com.digitaldesign.documents.entity.UserEntity</node>
+    <node x="654.5" y="568.0">com.digitaldesign.documents.entity.CatalogueEntity</node>
+    <node x="293.0" y="848.0">com.digitaldesign.documents.DocumentsApplication</node>
+    <node x="360.0" y="342.0">com.digitaldesign.documents.entity.PriorityEnum</node>
+    <node x="0.0" y="375.5">com.digitaldesign.documents.entity.ConcreteDocument</node>
+    <node x="531.0" y="171.0">com.digitaldesign.documents.entity.TypeOfFileEnum</node>
+    <node x="815.4285714285714" y="0.0">com.digitaldesign.documents.entity.UserRolesEnum</node>
+    <node x="1133.5" y="386.5">com.digitaldesign.documents.service.EmailService</node>
+    <node x="0.0" y="848.0">com.digitaldesign.documents.DocumentsApplicationTests</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.digitaldesign.documents.service.UserService" target="com.digitaldesign.documents.entity.UserEntity">
+      <point x="0.0" y="-38.0" />
+      <point x="985.5" y="322.0" />
+      <point x="942.1785714285714" y="322.0" />
+      <point x="19.25" y="49.0" />
+    </edge>
+    <edge source="com.digitaldesign.documents.entity.DocumentEntity" target="com.digitaldesign.documents.entity.ConcreteDocument">
+      <point x="-129.7499999999999" y="-60.0" />
+      <point x="223.16666666666663" y="510.0" />
+      <point x="88.0" y="510.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="com.digitaldesign.documents.service.documentService" target="com.digitaldesign.documents.entity.UserEntity">
+      <point x="65.74999999999994" y="-49.0" />
+      <point x="627.125" y="680.0" />
+      <point x="847.0" y="680.0" />
+      <point x="847.0" y="322.0" />
+      <point x="903.6785714285714" y="322.0" />
+      <point x="-19.25" y="49.0" />
+    </edge>
+    <edge source="com.digitaldesign.documents.service.documentService" target="com.digitaldesign.documents.entity.DocumentEntity">
+      <point x="-65.75000000000006" y="-49.0" />
+      <point x="495.62499999999994" y="680.0" />
+      <point x="352.9166666666665" y="680.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="com.digitaldesign.documents.entity.UserEntity" target="com.digitaldesign.documents.entity.UserRolesEnum">
+      <point x="0.0" y="-49.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.digitaldesign.documents.service.EmailService" target="com.digitaldesign.documents.entity.UserEntity">
+      <point x="0.0" y="-27.0" />
+      <point x="1235.5" y="312.0" />
+      <point x="980.6785714285714" y="312.0" />
+      <point x="57.75" y="49.0" />
+    </edge>
+    <edge source="com.digitaldesign.documents.entity.DocumentEntity" target="com.digitaldesign.documents.entity.FileEntity">
+      <point x="129.7500000000001" y="-60.0" />
+      <point x="482.66666666666663" y="510.0" />
+      <point x="621.3333333333333" y="510.0" />
+      <point x="-78.66666666666674" y="49.0" />
+    </edge>
+    <edge source="com.digitaldesign.documents.entity.FileEntity" target="com.digitaldesign.documents.entity.TypeOfFileEnum">
+      <point x="-59.0" y="-49.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.digitaldesign.documents.entity.DocumentEntity" target="com.digitaldesign.documents.entity.DocumentType">
+      <point x="-43.249999999999886" y="-60.0" />
+      <point x="309.66666666666663" y="510.0" />
+      <point x="268.0" y="510.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.digitaldesign.documents.entity.CatalogueEntity" target="com.digitaldesign.documents.entity.FileEntity">
+      <point x="-45.5" y="-27.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="com.digitaldesign.documents.entity.DocumentEntity" target="com.digitaldesign.documents.entity.PriorityEnum">
+      <point x="43.250000000000114" y="-60.0" />
+      <point x="396.16666666666663" y="510.0" />
+      <point x="461.0" y="510.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="com.digitaldesign.documents.entity.FileEntity" target="com.digitaldesign.documents.entity.UserEntity">
+      <point x="59.0" y="-49.0" />
+      <point x="759.0" y="312.0" />
+      <point x="865.1785714285714" y="312.0" />
+      <point x="-57.75" y="49.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="770.5555555555555" y="346.22222222222223" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

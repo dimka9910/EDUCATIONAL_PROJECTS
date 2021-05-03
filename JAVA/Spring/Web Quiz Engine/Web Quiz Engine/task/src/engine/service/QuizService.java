@@ -2,49 +2,48 @@ package engine.service;
 
 
 import engine.entity.QuizEntity;
+import engine.entity.UserEntity;
+import engine.exceptions.ForbiddenException;
 import engine.exceptions.IdNotFoundException;
 import engine.repository.QuizRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
+import org.springframework.data.domain.*;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.stream.Collectors;
+
 
 @Service
 public class QuizService {
 
     QuizRepository quizRepository;
-
-    @Autowired
     public QuizService(QuizRepository quizRepository) {
         this.quizRepository = quizRepository;
     }
 
-    ArrayList<QuizEntity> quizList = new ArrayList<>();
-
-//    public QuizEntity getQuiz() {
-//        return new QuizEntity("The Java Logo", "What is depicted on the Java logo?",
-//                new String[]{"Robot", "Tea leaf", "Cup of coffee", "Bug"});
-//    }
-
     public QuizEntity putQuiz(QuizEntity quizEntity) {
         return quizRepository.save(quizEntity);
-//        quizList.add(quizEntity);
-//        quizList.get(quizList.size() - 1).setId(quizList.size());
-//        return quizList.get(quizList.size() - 1);
     }
 
-    public QuizEntity[] getAllQuizzes() {
-        return quizRepository.findAll().toArray(QuizEntity[]::new);
-        //return quizList.toArray(QuizEntity[]::new);
+
+    public Page<QuizEntity> getAllQuizzes(Integer page, Integer pageSize, String sortBy) {
+        Pageable paging = PageRequest.of(page, pageSize, Sort.by(sortBy));
+        Page<QuizEntity> pagedResult = quizRepository.findAll(paging);
+        return pagedResult;
     }
 
     public QuizEntity getQuizById(int id) {
         return quizRepository.getById(id).orElseThrow(IdNotFoundException::new);
-//        return Optional.of(quizList.get(id - 1)).orElseThrow(IdNotFoundException::new);
+    }
+
+    public void deleteQuizById(int id){
+        QuizEntity quiz = quizRepository.getById(id).orElseThrow(IdNotFoundException::new);
+        if (!quiz.getUser().equals(SecurityContextHolder.getContext().getAuthentication().getPrincipal()))
+            throw new ForbiddenException();
+        else
+            quizRepository.deleteById(id);
     }
 }
